@@ -1,6 +1,6 @@
 import { ResultSetHeader, RowDataPacket } from 'mysql2';
 import connection from './connection';
-import Products from '../interfaces';
+import Products from '../interfaces/products';
 
 const getAll = async (): Promise<Products[]> => {
   const query = 'SELECT * FROM Trybesmith.products';

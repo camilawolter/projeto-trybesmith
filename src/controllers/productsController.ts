@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import productsService from '../services/productsService';
 import 'express-async-errors';
-import Products from '../interfaces';
+import Products from '../interfaces/products';
 
 const getAll = async (_req: Request, res: Response) => {
   const result = await productsService.getAll();

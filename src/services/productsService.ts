@@ -1,5 +1,5 @@
 import productsModel from '../models/productsModel';
-import Products from '../interfaces';
+import Products from '../interfaces/products';
 
 const getAll = async () => {
   const data = await productsModel.getAll();
